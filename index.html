@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>RESUME BUILDER</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif; scroll-behavior: smooth;}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.site-footer
+{
+  background-color:LIGHTGRAY;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#383535;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#d461b2
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#0a0a0a
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <img src="resume.png" style="height:100px; width:100px; float: left;">
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue" >HOME</a>
+    <a href="#footer" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">ABOUT US</a>
+    <a href="login.php"  class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">BUILD YOUR RESUME</a>
+    <a href="login.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue" STYLE="float: right;">LOGIN</a>
+    <a href="signup.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue" STYLE="float: right;">SIGN UP</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#footer" class="w3-bar-item w3-button w3-padding-large">About US</a>
+    <a href="login.php" class="w3-bar-item w3-button w3-padding-large">Login</a>
+    <a href="signup.php" class="w3-bar-item w3-button w3-padding-large">Sign Up</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-light-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">BUILDING A PERFECT RESUME HAS NEVER BEEN THIS EASY!</h1>
+  <p class="w3-xlarge">FOLLOW 3 SIMPLE STEPS !</p>
+  <a href="signup.php"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" >Get Started!</button></a><br>
+
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      
+      <h1>Why Is a Resume Important?</h1>
+      <h5 class="w3-padding-32">A resume is an important tool for your job search because it offers a page or two where you can display your top skills and qualities. However, a resume is much more than that. Resumes help employers make hiring decisions and help you get your first interview. That's why it matters how you structure your resume and what information you decide to include. In this article, you'll learn why a resume is important and get actionable resume tips that may help you achieve your next career move.</h5>
+
+      <h5 class="w3-padding-32">Resumes, usually accompanied by customized cover letters, get sent to employers to determine your eligibility and qualifications for a job. Employers use resumes to get a deeper understanding of candidate skills, strengths and experience. Your resume should reflect achievements, awards, education, experience and any other outstanding accomplishments that align with your career path and goals. Your resume is your first point of contact with the employer and sets the tone for subsequent steps such as first interview, second interview, pre-screening and on-boarding.</h5>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="r1.JPG" style="height: 500px; width: 350px; margin-left: 20px;">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="r2.jpg" style="height: 500px; width: 350px; margin-left: -80px; border: 5px solid skyblue; rotate: -20deg;">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Why do you need a resume?</h1>
+      <h5 class="w3-padding-32">In today's competitive market of professional jobs, a resume is usually a base requirement for moving forward in the interview process. A good resume will immediately display to employers why the candidate is a good fit. Here are some reasons why you need a resume to get your next job. An effective resume:
+
+      <br><br><li> Outlines your relevant skills and experience</li> 
+      <br><li>   Displays the benefits you offer employers</li>
+      <br> <li> Grabs the attention of employers</li>
+      <br><li>   Matches you to the position</li>
+      <br> <li>  Can lead to an interview</li></h5>
+
+     
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge ">“We’re here to put a dent in the universe. Otherwise why else even be here?”
+
+    <br>  ― Steve Jobs</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity" id="footer">  
+  <div class="container">
+    <div class="row">
+     <div class="site-footer">      
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+     <a href="#">Ateef Radiowalla & Khadija Morbiwala</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="https://www.instagram.com/iamateefradio/"><i class="fa fa-instagram"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/imateefradio"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="https://github.com/ateefradio"><i class="fa fa-github"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/in/ateef-radiowalla-5683351aa/"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- <p> Built by Radiowalla Ateef &  Khadija Morbiwala</p>
+ <p>Copyright 2021</p> -->
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
